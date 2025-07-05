@@ -1,0 +1,110 @@
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2);
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Header */
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+  height: 60px;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #0077b6;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #023e8a;
+}
+
+/* Sidebar */
+.sidebar {
+  position: absolute;
+  top: 100px;
+  left: 10px;
+}
+
+.hamburger {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.admin-hover {
+  display: none;
+  margin-top: 10px;
+}
+
+.sidebar:hover .admin-hover {
+  display: block;
+}
+
+.admin-hover a {
+  text-decoration: none;
+  color: white;
+  background: #0077b6;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.main-content {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.animated-title {
+  font-size: 2.8rem;
+  background: linear-gradient(90deg, gold, red, green, skyblue);
+  background-clip: text;
+  color: transparent;
+  animation: gradientColor 5s infinite linear;
+  font-weight: 800;
+}
+
+@keyframes gradientColor {
+  0% { background-position: 0% }
+  100% { background-position: 100% }
+}
+
+.slogan {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  color: #0288d1;
+}
+
+.founder-img {
+  margin: 2rem auto;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background: #0077b6;
+  color: white;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
